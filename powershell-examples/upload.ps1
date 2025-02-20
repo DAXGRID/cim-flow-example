@@ -15,6 +15,8 @@ param(
 # Stop the script when a cmdlet or a native command fails
 $ErrorActionPreference = 'Stop'
 $PSNativeCommandUseErrorActionPreference = $true
+
+# Load dependencies
 Add-Type -AssemblyName "System.Net.Http"
 
 # Check if the list is empty
