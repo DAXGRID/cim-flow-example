@@ -12,6 +12,9 @@ param(
     [string] $Password
 )
 
+# Stop the script when a cmdlet or a native command fails
+$ErrorActionPreference = 'Stop'
+$PSNativeCommandUseErrorActionPreference = $true
 Add-Type -AssemblyName "System.Net.Http"
 
 # Check if the list is empty
