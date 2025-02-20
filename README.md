@@ -1,6 +1,8 @@
-# CIM Flow Example
+# CIMFlow platform examples
 
 Contains example scripts that showcases interactions with the CIM Flow platform.
+
+## How to upload to the CimFlow platform
 
 ### Example using the PowerShell 5+ script to zip and upload files with automatic naming of zip file. (Windows)
 
