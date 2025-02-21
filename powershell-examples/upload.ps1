@@ -43,8 +43,6 @@ try {
         "Content-Type" = "multipart/form-data"
     }
 
-    $credentials = New-Object System.Management.Automation.PSCredential -ArgumentList $Username, (ConvertTo-SecureString $Password -AsPlainText -Force)
-
     $handler = New-Object System.Net.Http.HttpClientHandler
     $handler.Credentials = New-Object System.Net.NetworkCredential($username, $password)
 
