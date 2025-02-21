@@ -44,7 +44,7 @@ try {
     }
 
     $handler = New-Object System.Net.Http.HttpClientHandler
-    $handler.Credentials = New-Object System.Net.NetworkCredential($username, $password)
+    $handler.Credentials = New-Object System.Net.NetworkCredential($Username, $Password)
 
     $client = New-Object System.Net.Http.HttpClient($handler)
 
