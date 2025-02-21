@@ -58,7 +58,7 @@ try {
     $multipartContent.Add($fileContent, "data", [System.IO.Path]::GetFileName($ZipFilePath))
 
     Write-Host "Uploading '$ZipFilePath' to '$Url'."
-    $response = $client.PostAsync($Url, $multipartContent).Result
+    $response = $client.PostAsync($Url, $multipartContent).GetAwaiter().GetResult()
     Write-Host "Status Code: $($response.StatusCode)"
 
     $fileStream.Close()
