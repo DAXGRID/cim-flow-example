@@ -25,7 +25,7 @@ pwsh ./upload.ps1 -Files /home/my_user/my_file1.xml,/home/my_user/my_file2.xml -
 Deletes the file in the specified `Url` path.
 
 ```sh
-pwsh ./delete.ps1 -Url "https://files.customer_name.cimflow.net/my_file.zip" -Username "my_username" -Password "mypassword"
+pwsh ./delete.ps1 -Url "https://files.customer_name.cimflow.net/output/2025_04_14_06_06_55_cim_output.zip" -Username "my_username" -Password "mypassword"
 ```
 
 
@@ -52,5 +52,5 @@ The example allows multiple files and also compresses the files for you.
 Deletes the file in the specified `Url` path.
 
 ```sh
-./delete.sh "https://files.customer_name.cimflow.net/my_file.zip" "my_username" "mypassword"
+./delete.sh "https://files.customer_name.cimflow.net/output/2025_04_14_06_06_55_cim_output.zip" "my_username" "mypassword"
 ```
