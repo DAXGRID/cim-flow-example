@@ -2,7 +2,7 @@
 
 Contains example scripts that showcases interactions with the CIM Flow platform.
 
-## How to upload to the CIMFlow platform
+## How to upload
 
 ### Example using the PowerShell 7+
 
