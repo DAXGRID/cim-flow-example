@@ -19,8 +19,9 @@ try {
 
     $response = Invoke-WebRequest -Uri $url -Method Get -Credential $credentials -OutFile $OutputPath 
 
-    Write-Host "Status Code: $($response.StatusCode)"
+    Write-Host "Finished download file to $OutPutPath"
 }
 catch {
     Write-Error "Error: $_"
+    throw $_
 }
