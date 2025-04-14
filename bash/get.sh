@@ -14,7 +14,7 @@ username="$3"
 password="$4"
 
 echo "Downloading file in path '$url'."
-http_status=$(curl -sS --write-out '%{http_code}' -X GET -o "$output" -u "$username:$password" "$url")
+http_status=$(curl -sS --write-out '%{http_code}' -X GET -O --output-dir "$output" -u "$username:$password" "$url")
 curl_exit_status=$?
 
 if [ "$curl_exit_status" -ne 0 ]; then
