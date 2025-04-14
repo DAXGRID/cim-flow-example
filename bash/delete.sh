@@ -22,7 +22,7 @@ if [ "$curl_exit_status" -ne 0 ]; then
 fi
 
 if [[ "$http_status" -ge 200 && "$http_status" -lt 300 ]]; then
-    echo "Finished deleting the file. Status Code: $http_status"
+    echo "Finished deleting the file. Status Code: $http_status."
     exit 0 # Success
 else
     echo "Error: Failed to delete file. Server responded with HTTP Status Code: $http_status" >&2
