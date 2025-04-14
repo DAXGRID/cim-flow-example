@@ -43,7 +43,7 @@ try {
           data = Get-Item -Path $ZipFilePath
       }
 
-    Write-Host "Status Code: $($response.StatusCode)"
+    Write-Host "Finished uploading the files. Status Code: $($response.StatusCode)"
 }
 catch {
     Write-Error "Error: $_"

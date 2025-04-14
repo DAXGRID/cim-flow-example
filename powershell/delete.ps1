@@ -16,7 +16,7 @@ try {
 
     $response = Invoke-WebRequest -Uri $url -Method Delete -Credential $credentials
 
-    Write-Host "Status Code: $($response.StatusCode)"
+    Write-Host "Finished deleting the file. Status Code: $($response.StatusCode)"
 }
 catch {
     Write-Error "Error: $_"
