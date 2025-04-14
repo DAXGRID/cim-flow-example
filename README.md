@@ -28,6 +28,13 @@ Deletes the file in the specified `Url` path.
 pwsh ./delete.ps1 -Url "https://files.customer_name.cimflow.net/output/2025_04_14_06_06_55_cim_output.zip" -Username "my_username" -Password "my_password"
 ```
 
+### Sync
+
+Example showcases syncing a whole to your local file-system. It only downloads the files if they do not already exist locally.
+
+```
+pwsh ./sync.ps1 -Url "https://files.customer_name.cimflow.net/output" -OutputPath "./my_output_folder" -Username "my-username" -Password "my_password"
+```
 
 ## Example using Bash
 
