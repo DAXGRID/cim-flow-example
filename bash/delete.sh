@@ -4,7 +4,7 @@ set -e
 
 if [ "$#" -ne 3 ]; then
     echo "Usage: $0 <Url> <Username> <Password>" >&2
-    echo "Error: Incorrect number of arguments provided. It should be <URL> <USERNAME> <PASSWORD>." >&2
+    echo "Error: Incorrect number of arguments provided." >&2
     exit 1
 fi
 
