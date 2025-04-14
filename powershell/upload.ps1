@@ -28,6 +28,7 @@ try {
 }
 catch {
     Write-Error "Error creating zip archive: $($_.Exception.Message)"
+    throw $_
 }
 
 # Upload the file
@@ -49,4 +50,5 @@ catch {
 } finally {
     Write-Host "Removing temporary zip file '$ZipFilePath'."
     Remove-Item $ZipFilePath -Force -ErrorAction Stop
+    throw $_
 }

@@ -20,4 +20,5 @@ try {
 }
 catch {
     Write-Error "Error: $_"
+    throw $_
 }
